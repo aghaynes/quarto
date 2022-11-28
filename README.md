@@ -26,5 +26,5 @@ It will ask if you trust the author of the template (hopefully you do...), and t
 
 | Branch | Format | Details |
 | ------ | ------ | ------- |
-| [pres](tree/pres) | revealjs | Presentation template. Presentations run in the internet browser. |
+| [pres](github.com/CTU_bern/quarto/blob/pres) | revealjs | Presentation template. Presentations run in the internet browser. |
 
