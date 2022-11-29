@@ -7,7 +7,7 @@ THIS IS IN DEVELOPMENT:.
 To install, type the following into the terminal and accept to install
 
 ```
-quarto install extension MoserGitHub/qmd-ctuhtml
+quarto install extension CTU-Bern/quarto@html
 ```
 
 ### Using the template
@@ -15,7 +15,7 @@ quarto install extension MoserGitHub/qmd-ctuhtml
 Once installed, you can create a new directory with all necessary files via the following command 
 
 ```
-quarto use template MoserGitHub/qmd-ctuhtml
+quarto use template CTU-Bern/quarto@html
 ```
 
 It will ask if you trust the author of the template (hopefully you do...), and then for a directory name. Type the path relative to your current location, for example
@@ -27,7 +27,7 @@ It will ask if you trust the author of the template (hopefully you do...), and t
 ### Reomve extension
 
 ```
-quarto remove extension MoserGitHub/qmd-ctuhtml
+quarto remove extension CTU-Bern/quarto@html
 ```
 
 ### Acknowledgements
