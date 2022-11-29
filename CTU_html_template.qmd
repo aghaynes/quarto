@@ -1,0 +1,138 @@
+---
+title: "CTU project name and CTU project number"
+subtitle: "SAP and/or study protocol version"
+description: "bla bla"
+author:
+  - name: "Quarto Muster"
+    orcid: 111
+    email: "xxx@ctu.unibe.ch"
+    affiliation: "CTU Bern, University of Bern"
+format: qmd-ctuhtml-html
+bibliography: references.bib
+---
+
+# Methods
+
+This section describes the methods used in the study. Quartones provides first evidence in @ref1. A general overview is provided in @ref2. References can be used over the bibtex bibliography.
+
+## Methods subsection 1
+
+## Study population
+
+Insert here description of study population. Most likely a flowchart is necessary for describing eligibility of patients and for reproducibility.
+
+```{r}
+#| echo: false
+#| results: hide
+#| message: false
+#| fig-height: 8
+#| fig-width: 8
+
+library(Gmisc)
+library(grid)
+
+grid.newpage()
+
+N0 <- 100
+N1 <- 75
+
+x_coord1 <- 0.3
+
+text_box1 <- paste0("Population 1\nN=", N0)
+box1 <- boxGrob(text_box1, x=x_coord1, y=0.9, bjust = "center")
+box1
+
+text_box2 <- paste0("Population 2\nN=", N1)
+box2 <- boxGrob(text_box2, x=x_coord1, y=0.1, bjust = "center")
+box2
+
+excluded1 <- boxGrob(paste0("Exclusion (n=", N0-N1, ")"), x = x_coord1+0.27, 
+                     y = (coords(box2)$top + coords(box1)$bottom)/2, 
+                     just="left", bjust = "left")
+excluded1
+
+connectGrob(box1, box2, "vertical")
+connectGrob(box1, excluded1, "-")
+```
+
+## Statistical methods
+
+Describe the methods, ideally in a form that can be used directly in a paper. Report the statistical software(s) used. 
+
+## Results
+
+### Results subsection 1
+
+### Interactive descriptive tables
+
+```{r}
+#| echo: true
+#| message: false
+#| fig-height: 8
+#| fig-width: 8
+
+set.seed(1)
+n <- 1000
+
+a <- rnorm(n, mean=40, sd=20)
+b <- rpois(n, lambda=3)
+c <- rpois(n, lambda=1.5)
+
+data <- data.frame(age=a, num_coffee=b, quarto=c)
+
+library(tidyverse)
+data_agg <- data %>% group_by(quarto) %>% 
+  summarise(mean_age=round(mean(age),1), sum_coffee=sum(num_coffee))
+
+library(DT)
+# Build factors for filtering in datatable()
+data_agg$sum_coffee <- factor(data_agg$sum_coffee)
+data_agg$quarto <- factor(data_agg$quarto)
+
+col_names_table <- c("Intensity of Quarto use", 
+                     "Mean age", "Sum of coffees")
+datatable(data_agg, colnames=col_names_table, 
+          rownames = F, filter = 'top', 
+          options = list(pageLength = 20))
+```
+
+### Interactive graphs
+
+```{r}
+#| echo: true
+#| message: false
+#| fig-height: 8
+#| fig-width: 8
+
+library(plotly)
+
+fig <- ggplot(data_agg, aes(x=quarto, y=sum_coffee))+geom_point()+
+  ylab("Intensity of Quarto use")+xlab("Sum of coffees")+theme_bw()
+ggplotly(fig)
+```
+
+# Revision history
+
+| Release date| Summary of changes | Reason for change(s) |
+| --- | --- | --- |
+| Nov 2, 2022 | New report 2 | Not applicable |
+| Nov 1, 2022 | New report 1 | Not applicable |
+
+# Reproducibility
+
+## Data export
+
+This report is based on the file XXX from the RedCap data export on date XXX.
+
+## Version control
+
+CTU Bern uses the SVN version control system. This report is based on revision XXX.
+
+## Session info
+
+```{r, echo=T, message=F}
+#| echo: true
+#| message: false
+
+sessionInfo()
+```
