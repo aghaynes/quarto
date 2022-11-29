@@ -82,7 +82,8 @@ data <- data.frame(age=a, num_coffee=b, quarto=c)
 
 library(tidyverse)
 data_agg <- data %>% group_by(quarto) %>% 
-  summarise(mean_age=round(mean(age),1), sum_coffee=sum(num_coffee))
+  summarise(mean_age=round(mean(age),1), 
+            sum_coffee=sum(num_coffee))
 
 library(DT)
 # Build factors for filtering in datatable()
