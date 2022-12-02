@@ -27,4 +27,5 @@ It will ask if you trust the author of the template (hopefully you do...), and t
 | Branch | Format | Details |
 | ------ | ------ | ------- |
 | [pres](https://github.com/CTU-Bern/quarto/tree/pres) | revealjs | Presentation template. Presentations run in the internet browser. |
+| [html](https://github.com/CTU-Bern/quarto/tree/html) | html | HTML report template for a basic statistical analysis report. |
 
