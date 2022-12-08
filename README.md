@@ -7,7 +7,7 @@ THIS IS IN DEVELOPMENT:.
 To install, type the following into the terminal and accept to install
 
 ```
-quarto install extension CTU-Bern/quarto@html
+quarto install extension CTU-Bern/quarto@html-ss
 ```
 
 ### Using the template
