@@ -1,0 +1,114 @@
+---
+title: "CTU project name and CTU project number"
+subtitle: "Recruitment report"
+description: "date"
+author:
+  - name: "Quarto Muster"
+    orcid: 111
+    email: "xxx@ctu.unibe.ch"
+    affiliation: "CTU Bern, University of Bern"
+format: qmd-ctuhtml-html
+bibliography: references.bib
+---
+
+
+```{r}
+#| label: packages
+#| include: false
+library(accrualPlot)
+library(tidyverse)  # for data wrangling, plotting
+library(unibeCols)
+```
+
+```{r}
+#| label: secuTrial
+#| eval: false
+#| echo: false
+# secuTrial
+library(secuTrialR) # for secutrial databases
+zip <- here::here(glue::glue("01_Original_data_{params$projnum}"), "file_name.zip")
+raw.data <- read_secuTrial(zip)
+dat <- raw.data$cn %>% # might also be called casenodes
+  mutate(rando_date = rando_date_var
+         , ctr = center_variable
+         # , other modifications?
+         )
+```
+
+
+
+```{r}
+#| label: redcap
+#| eval: false
+#| echo: false
+library(redcaptools)       # for redcap
+rc.url <- "https://redcap.ctu.unibe.ch/api/"
+token <- readLines(file.path("O:", "tokens", "file-containing-token.txt"))
+post.body.list <- redcaptools::redcap_export_tbl(token, rc.url, "record")
+dat <- raw.data %>% 
+  filter(redcap_event_name == "event-with-rando") %>% 
+  mutate(rando_date = as.Date(rando_date_var)
+         , ctr = center_variable
+         # , other modifications?
+         )
+```
+
+```{r, echo = FALSE}
+#| echo: false
+# generate demo data
+dat <- data.frame(rando_date = Sys.Date() + sample(-100:0, 300, TRUE),
+                  center = sample(c("A", "B", "C"), 300, TRUE, prob = c(.5, .4, .1)))
+```
+
+# Overall recruitment
+
+```{r}
+#| echo: false
+#| warning: false 
+#| fig.height: 3
+acc <- accrual_create_df(dat$rando_date, by = dat$center)
+p1 <- gg_accrual_plot_cum(acc$Overall) +
+  theme_classic() +
+  scale_x_date(labels = function(x) format(x, format = "%d %b %Y"))
+p2 <- gg_accrual_plot_abs(acc$Overall, unit = "month") +
+  theme_classic() +
+  scale_x_date(labels = function(x) format(x, format = "%b %Y"))
+library(patchwork)
+p1 + p2
+```
+
+
+# Recruitment by site
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig.height: 3
+cols <- c(unibeRed(), unibeGreen(), unibeIce(), unibeMustard())
+p1 <- gg_accrual_plot_cum(acc) +
+  theme_classic() +
+  scale_x_date(labels = function(x) format(x, format = "%d %b %Y")) +
+  scale_color_manual(values = cols) +
+  theme(legend.position = "bottom")
+p2 <- plot(acc, which = "abs", unit = "month", engine = "gg") +
+  theme_classic() +
+  scale_x_date(labels = function(x) format(x, format = "%b %Y")) +
+  scale_fill_manual(values = cols) +
+  theme(legend.position = "bottom")
+p1 + p2
+```
+
+
+# Predicted end
+
+```{r, echo = FALSE, fig.height = 3}
+#| echo: false
+#| warning: false
+#| fig.height: 3
+plot(acc, engine = "gg", which = "pred", target = 400) +
+  theme_classic() +
+  scale_x_date(labels = function(x) format(x, format = "%d %b %Y")) +
+  theme(plot.title.position = "plot")
+```
+
+
