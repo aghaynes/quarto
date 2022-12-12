@@ -1,0 +1,82 @@
+---
+title: "CTU project name and CTU project number"
+subtitle: "SAP and/or study protocol version"
+description: "Sample size calculation"
+author:
+  - name: "Quarto Muster"
+    orcid: 111
+    email: "xxx@ctu.unibe.ch"
+    affiliation: "CTU Bern, University of Bern"
+format: qmd-ctuhtml-html
+bibliography: references.bib
+---
+
+# Study objective
+
+## Primary objective
+
+Describe study objective. The study objective will usually be defined
+according to:
+
+-   Patients: Which patients are included in the study?
+-   Interventions: Which are the intervention groups?
+-   Comparisons: Which are the control groups?
+-   Outcome: Which is the primary outcome?
+
+## Primary outcome
+
+Description of primary outcome, including: 
+
+- Type of data (binary, ordinal, continuous, count, time-to-event) 
+- Time point of assessment
+- In case of continuous outcomes, the measurement scale/units of measurements
+
+## Hypothesis (if applicable)
+
+-   Description of null and alternative hypothesis
+-   Testing framework (e.g. superiority)
+
+# Methods and assumptions
+
+-   Allocation ratio,
+-   Type I and II error rate,
+-   Effect measure, e.g. relative risk, difference in means
+-   Minimal clinically relevant difference between the groups (or
+    non-inferiority margin),
+-   Assumptions about any further parameter that is used, e.g. standard
+    deviation for continuous outcomes, baseline proportion/rate for
+    binary/survival outcomes.
+-   Any corrections for dropouts or withdrawals (if applicable),
+-   Method or test used for the sample size calculation,
+-   Statistics software used (unless standard test/method is used)
+
+```{r}
+#| include: false
+# do calculations here...
+```
+
+# Result of sample size calculation
+
+-   Result, e.g. a table
+-   Wording of sample size calculation for the study proposal/protocol
+
+
+
+# Revision history
+
+| Release date| Summary of changes | Reason for change(s) |
+| --- | --- | --- |
+| Nov 1, 2022 | Version report 1 | Not applicable |
+
+
+# Session info
+<details>
+<summary>Click to expand</summary>
+
+```{r, echo=T, message=F}
+#| echo: true
+#| message: false
+sessionInfo()
+```
+
+</details>
