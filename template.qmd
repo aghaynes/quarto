@@ -96,6 +96,15 @@ p2 <- plot(acc, which = "abs", unit = "month", engine = "gg") +
   scale_fill_manual(values = cols) +
   theme(legend.position = "bottom")
 p1 + p2
+
+library(DT)
+report_table <- summary(acc)
+names(report_table) <- report_table[1,]
+report_table <- report_table[-1,]
+report_table$Center <- as.factor(report_table$Center)
+datatable(report_table, 
+          rownames = F, filter = 'top', 
+          options = list(pageLength = 20))
 ```
 
 
