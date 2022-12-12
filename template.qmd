@@ -1,7 +1,6 @@
 ---
 title: "CTU project name and CTU project number"
 subtitle: "Recruitment report"
-description: "date"
 author:
   - name: "Quarto Muster"
     orcid: 111
