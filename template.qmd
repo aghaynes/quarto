@@ -11,7 +11,12 @@ format: qmd-ctuhtml-html
 bibliography: references.bib
 ---
 
+# Overview
 
+- Number of planned centers.
+- Planned final sample size.
+- Planned interim analyses.
+- Study protocol version (maybe link to published study protocol)
 ```{r}
 #| label: packages
 #| include: false
