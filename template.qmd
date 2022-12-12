@@ -59,3 +59,24 @@ Description of primary outcome, including:
 
 -   Result, e.g. a table
 -   Wording of sample size calculation for the study proposal/protocol
+
+
+
+# Revision history
+
+| Release date| Summary of changes | Reason for change(s) |
+| --- | --- | --- |
+| Nov 1, 2022 | Version report 1 | Not applicable |
+
+
+# Session info
+<details>
+<summary>Click to expand</summary>
+
+```{r, echo=T, message=F}
+#| echo: true
+#| message: false
+sessionInfo()
+```
+
+</details>
