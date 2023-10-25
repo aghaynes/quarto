@@ -6,7 +6,7 @@ author:
   - name: "Quarto Muster"
     orcid: 111
     email: "xxx@ctu.unibe.ch"
-    affiliation: "CTU Bern, University of Bern"
+    affiliation: "CTU Bern, Department of Clinical Research, University of Bern"
 format: qmd-ctuhtml-html
 bibliography: references.bib
 ---
