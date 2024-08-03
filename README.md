@@ -16,9 +16,11 @@ The zip folder contains layout files, which do not have to be modified and proje
   - ubreport.cls: latex class file that defines the layout of the report
   - report.tex: main latex file that loads packages and sets the document up
   - ub_16pt-cmyk.pdf: the unibe logo
+  - 
 ####  Project-specific files are:
 - ubreport.clo: contains info about project, author and department
 - analysis.rnw: the actual content of the document that may include R-code chunk and is Sweaved to get analysis.tex
+- bibtex_proj.bib: references n BibTeX format
 - batch: executes Sweave and pdflatex and generates the report pdf. A suitable report name can be added (for the "xxx").
   
 ### Using the template
