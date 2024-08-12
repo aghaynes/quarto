@@ -15,8 +15,8 @@ The zip folder contains layout files, which do not have to be modified and proje
 #### Layout files are:
   - ubreport.cls: latex class file that defines the layout of the report
   - report.tex: main latex file that loads packages and sets the document up
-  - ub_16pt-cmyk.pdf: the unibe logo
-  - 
+  - logo: folder with unibe and DCR logos
+    
 ####  Project-specific files are:
 - ubreport.clo: contains info about project, author and department
 - analysis.rnw: the actual content of the document that may include R-code chunk and is Sweaved to get analysis.tex
