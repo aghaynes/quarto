@@ -4,7 +4,7 @@ version: 0.0.1
 contributes:
   formats:
     revealjs:
-      logo: ub_Logo_english_2019_RGB_wb.png
+      logo: DCRLogo.jpg
       theme: unibe.scss
       slide-number: c/t
       show-slide-number: all
