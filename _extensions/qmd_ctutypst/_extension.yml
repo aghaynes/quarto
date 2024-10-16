@@ -1,0 +1,9 @@
+title: Typst Template
+author: André Moser
+version: 0.0.2
+contributes:
+  formats:
+    typst:
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
