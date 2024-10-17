@@ -17,7 +17,7 @@
   affiliations: (),
   path_logo: "/_extensions/CTU-Bern/qmd_ctutypst/",
   // logo_size: filename (fore example, "dcrlogo.jpg")
-  logo: none,
+  logo: "DCRlogo.svg",
   // logo_size: percentage (for example, 80%) or auto
   logo_size: 100%,
   logo2: "unibelogo.svg",
