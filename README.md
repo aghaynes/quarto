@@ -38,5 +38,3 @@ quarto remove extension CTU-Bern/quarto@typst
 - [Quarto documentation](https://quarto.org/docs/extensions/formats.html)
 
 
-| [latex](https://github.com/CTU-Bern/quarto/tree/latex) | PDF | LaTeX template for compiling reports via Sweave and LaTeX. !!! In prep !!! |
-
