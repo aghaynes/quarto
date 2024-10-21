@@ -39,4 +39,5 @@ Download the content of the branch and unzip it in the relevant folder.
 | [html-rec](https://github.com/CTU-Bern/quarto/tree/html-rec) | html | HTML recruitment report template for a basic recruitment report. |
 | [html-ss](https://github.com/CTU-Bern/quarto/tree/html-ss) | html | HTML sample size calculation report template. |
 | [latex](https://github.com/CTU-Bern/quarto/tree/latex) | PDF | LaTeX template for compiling reports via Sweave and LaTeX. !!! In prep !!! |
+| [typst](https://github.com/CTU-Bern/quarto/tree/typst) | PDF | Typst template for creating PDFs without using LaTeX !!! In prep !!! |
 
