@@ -1,11 +1,11 @@
 ---
-title: "CTU project name and CTU project number"
+title: "Project name and project number"
 subtitle: "Recruitment report"
 author:
   - name: "Quarto Muster"
     orcid: 111
-    email: "xxx@ctu.unibe.ch"
-    affiliation: "CTU Bern, Department of Clinical Research, University of Bern"
+    email: "xxx@unibe.ch"
+    affiliation: "Department of Clinical Research, University of Bern"
 format: qmd-ctuhtml-html
 bibliography: references.bib
 ---
