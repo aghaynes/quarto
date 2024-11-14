@@ -1,6 +1,6 @@
-# Latex templates for CTU Bern
+# Latex templates for DCR
 
-This repository has [LaTeX](https://latex.org/) templates for use at CTU Bern. 
+This repository has [LaTeX](https://latex.org/) templates for use at DCR. 
 
 Templates reside in their own branches. 
 
