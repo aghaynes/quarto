@@ -1,11 +1,11 @@
 ---
-title: "CTU Bern Presentation Theme"
+title: "DCR Presentation Theme"
 subtitle: "Inspired by the [R-ladies theme and template](https://github.com/beatrizmilz/quarto-rladies-theme) by [Bea Milz](https://twitter.com/BeaMilz) "
 author: "Alan"
 format: ctupres-revealjs
 footer: |
-        CTU Bern theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html).
-        Code available on [GitHub](https://github.com/aghaynes/CTUquarto).
+        DCR theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html).
+        Code available on [GitHub](https://github.com/CTU-Bern/quarto).
 chalkboard: false
 self-contained: true
 ---
