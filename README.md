@@ -1,4 +1,4 @@
-This is a [quarto](https://quarto.org) html reporting template for CTU Bern.
+This is a [quarto](https://quarto.org) html reporting template for DCR.
 
 THIS IS IN DEVELOPMENT:.
 
