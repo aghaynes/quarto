@@ -1,12 +1,12 @@
 ---
-title: "CTU project name and CTU project number"
+title: "Project name and project number"
 subtitle: "SAP and/or study protocol version"
 description: "bla bla"
 author:
   - name: "Quarto Muster"
     orcid: 111
-    email: "xxx@ctu.unibe.ch"
-    affiliation: "CTU Bern, University of Bern"
+    email: "xxx@unibe.ch"
+    affiliation: "Department of Clinical Research, University of Bern"
 format: qmd-ctuhtml-html
 bibliography: references.bib
 ---
@@ -127,7 +127,7 @@ This report is based on the file XXX from the RedCap data export on date XXX.
 
 ## Version control
 
-CTU Bern uses the SVN version control system. This report is based on revision XXX.
+DCR uses the SVN version control system. This report is based on revision XXX.
 
 ## Session info
 
