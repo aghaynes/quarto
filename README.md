@@ -1,6 +1,6 @@
 # Quarto and LaTeX templates for CTU Bern
 
-This repository has [Quarto](https://quarto.org/) and [LaTeX](https://latex.org) templates for use at CTU Bern. 
+This repository has [Quarto](https://quarto.org/) and [LaTeX](https://latex.org) templates for use at DCR. 
 
 Templates reside in their own branches. 
 
