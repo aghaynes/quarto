@@ -1,6 +1,6 @@
-# CTU Bern Quarto revealjs template
+# DCR Quarto revealjs template
 
-[quarto](https://quarto.org) revealjs extension for CTU Bern.
+[quarto](https://quarto.org) revealjs extension for DCR.
 
 THIS IS IN DEVELOPMENT
 
