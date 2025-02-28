@@ -1,6 +1,6 @@
 title: CTU Bern Presentation Template
 author: Alan Haynes
-version: 0.0.1
+version: 0.0.2
 contributes:
   formats:
     revealjs:
