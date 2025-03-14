@@ -197,7 +197,7 @@
           height: 100%,
           if (paper-size == "a4") { image(path_logo+logo2, width: 40%) } else if (paper-size == "a3") { image(path_logo+logo2, width: 30%) } else if (paper-size == "a2") { image(path_logo+logo2, width: 20%) } else if (paper-size == "a1") { image(path_logo+logo2, width: 15%) } else if (paper-size == "a0") { image(path_logo+logo2, width: 10%) }
         )
-      ),
+      )
         #grid(columns: (100%, 20%),
           align(right)[
             #text(
@@ -205,7 +205,7 @@
             )[
             #counter(page).display() of #locate((loc) => {counter(page).final(loc).first()})
             ]
-          ],
+          ]
 
 
         )
