@@ -97,3 +97,17 @@ section.has-dark-background a, section.has-dark-background a:hover {
 .st { // strings
   color: #007ea2 !important; // unibeSaphire
 }
+
+/* Figure captions */
+.figure-caption, figcaption {
+  text-align: left !important;
+  font-size: 0.9rem !important;   
+  font-style: italic !important; 
+}
+ 
+/* Table captions */
+.table-caption, caption {
+  text-align: left !important;
+  font-size: 0.9rem !important;   
+  font-style: italic !important; 
+}
