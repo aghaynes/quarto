@@ -9,7 +9,7 @@ THIS IS IN DEVELOPMENT
 To install, type the following into the terminal and accept to install
 
 ```
-quarto install extension CTU-Bern/quarto@pres
+quarto install extension dcr-unibe-ch/quarto@pres
 ```
 
 ### Using the template
@@ -17,7 +17,7 @@ quarto install extension CTU-Bern/quarto@pres
 Once installed, you can create a new directory with all necessary files via the following command 
 
 ```
-quarto use template CTU-Bern/quarto@pres
+quarto use template dcr-unibe-ch/quarto@pres
 ```
 
 It will ask if you trust the author of the template (hopefully you do...), and then for a directory name. Type the path relative to your current location.
