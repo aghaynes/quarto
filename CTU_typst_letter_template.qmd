@@ -1,0 +1,23 @@
+---
+format: qmd_ctutypst_letter-typst
+address_recipient_line1: "<Line1>"
+address_recipient_line2: "<Line2>"
+address_recipient_line3: "<Line3>"
+address_recipient_line4: "<Line4>"
+address_recipient_line5: "<Line5>"
+subject: "Subject line"
+sender: "Dr. Ueli Reber"
+sender_title: "Head of Business Operations"
+sender_line1: "DCR"
+sender_line2: "sitem-insel"
+sender_line3: "Freiburgstrasse 3"
+sender_line4: "3010 Bern"
+sender_line5: "Switzerland"
+sender_line6: "www.dcr.unibe.ch"
+department: "Department of Clinical Research"
+faculty: "Faculty of Medicine"
+---
+
+
+Quarto letters will replace Word templates soon!
+
