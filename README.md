@@ -1,5 +1,22 @@
 # qmd_ctutypst_letter
 
+### Using the template
+
+You can create a new directory with all necessary files via the following command 
+
+```
+quarto use template dcr-unibe-ch/quarto@typst-letter
+```
+
+It will ask if you trust the author of the template (hopefully you do...), and then for a directory name. Type the path relative to your current location, for example
+
+```
+/Clinical studies/typstletter_9999
+```
+
+
+
+
 A typical qmd header for this format might look like this
 
 ```
@@ -42,4 +59,13 @@ Useful parameters:
 | `includesenderright` | suppress the DCR address on the right hand side |
 | `signoff` | suppress the signature at the bottom. particularly useful when there should be content before and after the signature |
  
+
+
+
+
+### Remove extension
+
+```
+quarto remove extension dcr-unibe-ch/quarto@typst-letter
+```
 
