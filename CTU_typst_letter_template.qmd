@@ -1,23 +1,46 @@
 ---
 format: qmd_ctutypst_letter-typst
-address_recipient_line1: "<Line1>"
-address_recipient_line2: "<Line2>"
-address_recipient_line3: "<Line3>"
-address_recipient_line4: "<Line4>"
-address_recipient_line5: "<Line5>"
+recipient: "Dr. Researcher"
+address_recipient: false
+address_recipient_line1: "line 1"
+address_recipient_line2: "line 2"
+address_recipient_line3: "line 3"
+address_recipient_line4: ""
+address_recipient_line5: ""
+space_after_recipient: 50pt
 subject: "Subject line"
+subject2: "Second subject line"
 sender: "Dr. Ueli Reber"
 sender_title: "Head of Business Operations"
 sender_line1: "DCR"
-sender_line2: "sitem-insel"
+sender_line2: "sitem"
 sender_line3: "Freiburgstrasse 3"
 sender_line4: "3010 Bern"
 sender_line5: "Switzerland"
 sender_line6: "www.dcr.unibe.ch"
 department: "Department of Clinical Research"
 faculty: "Faculty of Medicine"
+includesenderright: true
+signoff: false
+keep-md: true
+keep-typ: true
 ---
 
 
-Quarto letters will replace Word templates soon!
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis libero, porttitor ut metus vel, ullamcorper suscipit augue. Curabitur congue, felis at rhoncus ornare, risus justo pharetra ante, ac semper massa est rhoncus felis. Suspendisse eget odio urna. Proin consectetur magna viverra, vestibulum leo a, sollicitudin turpis. Pellentesque sagittis, est in sollicitudin tempus, nunc diam tempor odio, id facilisis elit ex in felis. Cras fermentum vestibulum purus, tincidunt maximus lectus tempor nec. Ut nec tincidunt dolor. Pellentesque eget libero et ante vulputate dapibus ac ac massa. Maecenas pellentesque finibus ligula, at efficitur risus accumsan molestie. Donec vel metus porttitor, sagittis est ac, pharetra mi. Vestibulum tempus ante ultricies elit consequat, vitae elementum metus viverra. Fusce ultricies, nulla vitae tempus viverra, erat purus fringilla nisi, vel eleifend ante sem finibus metus. Sed sodales rhoncus elit, quis consequat turpis. Aliquam erat volutpat. Aliquam sodales ornare justo vitae viverra. In ultricies dui sapien, vitae condimentum ipsum volutpat vitae.
+
+Phasellus magna enim, posuere vel pellentesque nec, pretium eleifend nunc. Curabitur dignissim, nisl et bibendum volutpat, justo erat tristique elit, nec convallis leo purus mollis ante. Sed ac sagittis magna. Nulla viverra condimentum enim, et consectetur magna auctor non. Proin dictum ex est, at posuere sapien eleifend ut. Fusce risus dolor, efficitur in ultricies et, ullamcorper id lacus. Etiam lacinia ac lacus commodo hendrerit. Nullam vitae aliquet lacus, vel congue magna. Aenean justo mi, semper eu tempor et, aliquam ut purus. Nunc tincidunt sem non lacus mattis, eget blandit augue ultricies. Nulla vitae venenatis ligula. Morbi in eleifend ex.
+
+<!-- to have content after the signature, set signoff to false and use the following -->
+<!-- `#linebreak() `{=typst} -->
+<!-- `#linebreak() `{=typst} -->
+
+<!-- Kind regards, -->
+<!-- `#linebreak() `{=typst} -->
+<!-- `#linebreak() `{=typst} -->
+<!-- Dr. Ueli Reber -->
+<!-- `#linebreak() `{=typst} -->
+<!-- Head of Business Operations -->
+
+
 
